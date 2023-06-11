@@ -1,6 +1,5 @@
 package com.xuecheng.content.model.dao;
 
-import com.xuecheng.content.model.abstracts.AbstractQueryRequestParam;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
