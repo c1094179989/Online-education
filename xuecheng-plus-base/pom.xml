@@ -6,7 +6,7 @@
         <groupId>com.xuecheng</groupId>
         <artifactId>xuecheng-plus-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-<!--        基于当前pom.xml找到父工程-->
+        <!--        基于当前pom.xml找到父工程-->
         <relativePath>../xuecheng-plus-parent</relativePath>
     </parent>
     <artifactId>xuecheng-plus-base</artifactId>
@@ -14,6 +14,12 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
