@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.xuecheng.content.model.abstracts.AbstractQueryRequestParam;
 import com.xuecheng.content.model.enums.QueryParamTypeEnum;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.ToString;
 
@@ -27,12 +28,13 @@ import lombok.ToString;
         include = JsonTypeInfo.As.EXTERNAL_PROPERTY,
         property = "type",
         visible = true,
-        defaultImpl = QueryParamsDto.class
+        defaultImpl = QueryParamDto.class
 )
-public class QueryParamsDto extends AbstractQueryRequestParam {
+public class QueryParamDto extends AbstractQueryRequestParam {
     /**
      * 查询类型
      */
+    @ApiModelProperty("查询类型——根据类型匹配不同查询条件")
     @JsonProperty("type")
     private QueryParamTypeEnum type;
 }

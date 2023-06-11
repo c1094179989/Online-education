@@ -16,7 +16,7 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class QueryCourseParamDto extends QueryParamsDto {
+public class QueryCourseParamDto extends QueryParamDto {
     /**
      * 审核状态
      */
